@@ -21,7 +21,7 @@ export const AppRoutes = () => {
             </PrivateRoute>
           }
         />
-        <Route path="/Crearcuenta" element={<CreateAccount />} />
+        <Route path="/create-acount" element={<CreateAccount />} />
         <Route path="/" element={<Login />} />
       </Routes>
     </div>

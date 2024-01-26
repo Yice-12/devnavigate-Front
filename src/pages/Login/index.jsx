@@ -91,11 +91,6 @@ export const Login = () => {
               </Typography>
             )}
 
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Recordar contraseña"
-            />
-
             <Button
               type="submit"
               fullWidth
@@ -106,7 +101,11 @@ export const Login = () => {
             </Button>
             <Grid container>
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link
+                  onClick={() => navigate("/create-acount")}
+                  variant="body2"
+                  style={{ cursor: "pointer" }}
+                >
                   {"¿No tienes una cuenta? Crear"}
                 </Link>
               </Grid>
